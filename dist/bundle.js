@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("{\n\n//# sourceURL=webpack://unidad1/./src/index.js?\n}");
+eval("{var verificarPalindromo = function verificarPalindromo() {\n  var texto = document.getElementById(\"palabra\").value;\n  var limpio = texto.toLowerCase().replace(/[^a-z0-9]/g, '');\n  var invertido = limpio.split('').reverse().join('');\n  if (limpio === invertido && limpio.length > 0) {\n    Swal.fire({\n      icon: \"success\",\n      title: \"¡Es un palíndromo!\",\n      text: \"\\\"\".concat(texto, \"\\\" se lee igual al rev\\xE9s.\"),\n      confirmButtonColor: \"#0984e3\"\n    });\n  } else {\n    Swal.fire({\n      icon: \"error\",\n      title: \"No es un palíndromo\",\n      text: \"Intenta con otra palabra o frase.\",\n      confirmButtonColor: \"#d63031\"\n    });\n  }\n};\ndocument.addEventListener(\"DOMContentLoaded\", function () {\n  document.querySelector(\"button.btn\").addEventListener(\"click\", verificarPalindromo);\n});\n\n//# sourceURL=webpack://unidad1/./src/index.js?\n}");
 
 /***/ })
 
